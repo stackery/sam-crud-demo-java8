@@ -1,0 +1,40 @@
+apply plugin: 'java'
+apply plugin: 'io.spring.dependency-management'
+
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath "io.spring.gradle:dependency-management-plugin:1.0.3.RELEASE"
+    }
+}
+
+repositories {
+    mavenCentral()
+    maven {
+        url "https://maven.stackery.io/release"
+    }
+}
+
+dependencyManagement {
+    imports {
+        mavenBom 'com.amazonaws:aws-java-sdk-bom:1.11.228'
+    }
+}
+
+dependencies {
+    compile 'com.amazonaws:aws-java-sdk-dynamodb'
+    compile 'com.amazonaws:aws-lambda-java-events:2.2.2'
+    compile 'io.stackery:stackery:1.+'
+}
+
+task buildZip(type: Zip) {
+    from compileJava
+    from processResources
+    into('lib') {
+        from configurations.runtime
+    }
+}
+
+build.dependsOn buildZip
