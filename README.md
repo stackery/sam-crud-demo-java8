@@ -16,31 +16,31 @@ Here is an overview of the files:
 .
 ├── README.md                          <-- This README file
 ├── src                                <-- Source code dir for all AWS Lambda functions
-│   ├── function1D0BF340               <-- Source code dir for createUser function
+│   ├── createUser                     <-- Source code dir for createUser function
 │   │   ├── build.gradle               <-- Gradle dependencies for createUser
 │   │   └── src
 │   │       └── main
 │   │           └── java
 │   │               └── Handler.java   <-- Lambda createUser function code
-│   ├── function6871BEC5               <-- Source code dir for getUser function
+│   ├── getUser                        <-- Source code dir for getUser function
 │   │   ├── build.gradle               <-- Gradle dependencies for getUser
 │   │   └── src
 │   │       └── main
 │   │           └── java
 │   │               └── Handler.java   <-- Lambda getUser function code
-│   ├── functionC2148022               <-- Source code dir for updateUser function
+│   ├── updateUser                     <-- Source code dir for updateUser function
 │   │   ├── build.gradle               <-- Gradle dependencies for updateUser
 │   │   └── src
 │   │       └── main
 │   │           └── java
 │   │               └── Handler.java   <-- Lambda updateUser function code
-│   ├── function5A53E646               <-- Source code dir for deleteUser function
+│   ├── deleteUser                     <-- Source code dir for deleteUser function
 │   │   ├── build.gradle               <-- Gradle dependencies for deleteUser
 │   │   └── src
 │   │       └── main
 │   │           └── java
 │   │               └── Handler.java   <-- Lambda deleteUser function code
-│   └── function48A53742               <-- Source code dir for listUsers function
+│   └── listUsers                      <-- Source code dir for listUsers function
 │       ├── build.gradle               <-- Gradle dependencies for listUsers
 │       └── src
 │           └── main
