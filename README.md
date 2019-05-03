@@ -18,34 +18,40 @@ Here is an overview of the files:
 ├── src                                <-- Source code dir for all AWS Lambda functions
 │   ├── createUser                     <-- Source code dir for createUser function
 │   │   ├── build.gradle               <-- Gradle dependencies for createUser
+│   │   ├── .stackery-config.yaml      <-- Default CLI parameters for this directory
 │   │   └── src
 │   │       └── main
 │   │           └── java
 │   │               └── Handler.java   <-- Lambda createUser function code
 │   ├── getUser                        <-- Source code dir for getUser function
 │   │   ├── build.gradle               <-- Gradle dependencies for getUser
+│   │   ├── .stackery-config.yaml      <-- Default CLI parameters for this directory
 │   │   └── src
 │   │       └── main
 │   │           └── java
 │   │               └── Handler.java   <-- Lambda getUser function code
 │   ├── updateUser                     <-- Source code dir for updateUser function
 │   │   ├── build.gradle               <-- Gradle dependencies for updateUser
+│   │   ├── .stackery-config.yaml      <-- Default CLI parameters for this directory
 │   │   └── src
 │   │       └── main
 │   │           └── java
 │   │               └── Handler.java   <-- Lambda updateUser function code
 │   ├── deleteUser                     <-- Source code dir for deleteUser function
 │   │   ├── build.gradle               <-- Gradle dependencies for deleteUser
+│   │   ├── .stackery-config.yaml      <-- Default CLI parameters for this directory
 │   │   └── src
 │   │       └── main
 │   │           └── java
 │   │               └── Handler.java   <-- Lambda deleteUser function code
 │   └── listUsers                      <-- Source code dir for listUsers function
 │       ├── build.gradle               <-- Gradle dependencies for listUsers
+│       ├── .stackery-config.yaml      <-- Default CLI parameters for this directory
 │       └── src
 │           └── main
 │               └── java
 │                   └── Handler.java   <-- Lambda listUsers function code
+├── .stackery-config.yaml              <-- Default CLI parameters for root directory
 └── template.yaml                      <-- SAM infrastructure-as-code template
 ```
 
